@@ -15,28 +15,50 @@ sqa_criteria:
     repos:
       github.com/013k-m/python-pytest-example git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-lavender-dingo.sh
-        container: qc.acc_greasy-violet-squid
+        - /usr/bin/env sh .sqa/script.chewy-olivine-insect.sh
+        container: qc.acc_trippy-grey-stingray
   QC.Doc:
     repos:
       github.com/013k-m/python-pytest-example find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-chocolate-lemur.sh
-        container: qc.doc_foggy-orange-moth
+        - /usr/bin/env sh .sqa/script.goopy-jade-sloth.sh
+        container: qc.doc_skanky-turquoise-numbat
       github.com/013k-m/python-pytest-example git:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-maroon-chicken.sh
-        container: qc.doc_cheeky-pear-goat
+        - /usr/bin/env sh .sqa/script.scanty-mauve-wombat.sh
+        container: qc.doc_gimpy-tomato-donkey
+      github.com/013k-m/python-pytest-example markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.beady-magenta-nightingale.sh
+        container: qc.doc_breezy-seashell-meerkat
   QC.Lic:
     repos:
       github.com/013k-m/python-pytest-example licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-cardinal-chamois.sh
-        container: qc.lic_cozy-buff-zorse
+        - /usr/bin/env sh .sqa/script.thirsty-tomato-caracal.sh
+        container: qc.lic_messy-zucchini-rottweiler
+  QC.Sec:
+    repos:
+      github.com/013k-m/python-pytest-example bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.hilly-amber-argentino.sh
+        container: qc.sec_homey-persimmon-salamander
+  QC.Sty:
+    repos:
+      github.com/013k-m/python-pytest-example flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-goldenrod-emu.sh
+        container: qc.sty_flabby-cornflower-newt
+  QC.Uni:
+    repos:
+      github.com/013k-m/python-pytest-example pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-zucchini-ostrich.sh
+        container: qc.uni_messy-champagne-warthog
   QC.Ver:
     repos:
       github.com/013k-m/python-pytest-example get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-cardinal-mist.sh
-        container: qc.ver_chummy-viridian-burmese
+        - /usr/bin/env sh .sqa/script.greasy-tan-crane.sh
+        container: qc.ver_woolly-brass-wolf
 timeout: 5400
