@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/013k-m/python-pytest-example git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-amber-sloth.sh
-        container: qc.acc_lovely-heliotrope-binturong
+        - /usr/bin/env sh .sqa/script.shaggy-fuchsia-catfish.sh
+        container: qc.acc_sickly-eggplant-wolf
   QC.Doc:
     repos:
       github.com/013k-m/python-pytest-example find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-dandelion-rat.sh
-        container: qc.doc_pasty-ruby-penguin
+        - /usr/bin/env sh .sqa/script.surly-champagne-gar.sh
+        container: qc.doc_squirrely-champagne-mayfly
       github.com/013k-m/python-pytest-example git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-cinnabar-ant.sh
-        container: qc.doc_squeaky-persimmon-greyhound
+        - /usr/bin/env sh .sqa/script.grumpy-green-sponge.sh
+        container: qc.doc_slaphappy-viridian-balinese
       github.com/013k-m/python-pytest-example markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-cobalt-shrew.sh
-        container: qc.doc_boozy-magnolia-insect
+        - /usr/bin/env sh .sqa/script.hasty-bistre-leopard.sh
+        container: qc.doc_sunny-denim-blue
   QC.Lic:
     repos:
       github.com/013k-m/python-pytest-example licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-turquoise-oyster.sh
-        container: qc.lic_snappy-red-capybara
+        - /usr/bin/env sh .sqa/script.woolly-malachite-chipmunk.sh
+        container: qc.lic_gummy-gamboge-blue
   QC.Sec:
     repos:
       github.com/013k-m/python-pytest-example bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-burgundy-neanderthal.sh
-        container: qc.sec_blurry-myrtle-chamois
+        - /usr/bin/env sh .sqa/script.cozy-apricot-chameleon.sh
+        container: qc.sec_chewy-cerise-chimpanzee
   QC.Sty:
     repos:
       github.com/013k-m/python-pytest-example flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-plum-bonobo.sh
-        container: qc.sty_wheezy-xanthic-dachsbracke
+        - /usr/bin/env sh .sqa/script.freaky-lemon-capuchin.sh
+        container: qc.sty_sickly-jade-baboon
   QC.Uni:
     repos:
       github.com/013k-m/python-pytest-example commands:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-teal-dragonfly.sh
-        container: qc.uni_dorky-buff-wallaby
+        - /usr/bin/env sh .sqa/script.wimpy-rose-coati.sh
+        container: qc.uni_snippy-cobalt-woodlouse
   QC.Ver:
     repos:
       github.com/013k-m/python-pytest-example get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-brass-nightingale.sh
-        container: qc.ver_snazzy-apricot-chimpanzee
+        - /usr/bin/env sh .sqa/script.homey-puce-seahorse.sh
+        container: qc.ver_lanky-rose-caiman
 timeout: 5400
