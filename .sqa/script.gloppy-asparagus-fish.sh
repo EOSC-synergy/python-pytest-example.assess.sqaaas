@@ -4,5 +4,8 @@
 
 (
 cd github.com/013k-m/python-pytest-example &&
-    pytest .
+    make torch-cpu&&
+    make tf-2.13&&
+    micromamba run -p ./.venv-pytorch pip install .[dev]&&
+    micromamba run -p ./.venv-pytorch pytest -v ./tests/ -m "not slurm"
 )
