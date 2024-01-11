@@ -7,6 +7,9 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-api-spec:
+      branch: master
+      repo: https://github.com/eosc-synergy/sqaaas-api-spec
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,50 +18,50 @@ sqa_criteria:
     repos:
       github.com/013k-m/python-pytest-example git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-cerulean-elephant.sh
-        container: qc.acc_bluesy-lemon-oriole
+        - /usr/bin/env sh .sqa/script.lumpy-khaki-turtle.sh
+        container: qc.acc_squirrely-yellow-saola
   QC.Doc:
     repos:
-      github.com/013k-m/python-pytest-example find_doc_files.py:
+      github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-seashell-gharial.sh
-        container: qc.doc_homey-amethyst-crane
-      github.com/013k-m/python-pytest-example git:
+        - /usr/bin/env sh .sqa/script.leaky-orange-barracuda.sh
+        container: qc.doc_cozy-cream-grasshopper
+      github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-buff-bat.sh
-        container: qc.doc_blurry-ultramarine-cow
-      github.com/013k-m/python-pytest-example markdownlint:
+        - /usr/bin/env sh .sqa/script.stuffy-fuchsia-macaque.sh
+        container: qc.doc_greasy-indigo-bulldog
+      github.com/eosc-synergy/sqaaas-api-spec markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-tangerine-warthog.sh
-        container: qc.doc_muzzy-brass-tetra
+        - /usr/bin/env sh .sqa/script.greasy-malachite-tarantula.sh
+        container: qc.doc_hasty-seashell-birman
   QC.Lic:
     repos:
       github.com/013k-m/python-pytest-example licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-wisteria-terrier.sh
-        container: qc.lic_fuzzy-magenta-okapi
+        - /usr/bin/env sh .sqa/script.shabby-tomato-coyote.sh
+        container: qc.lic_randy-olive-armadillo
   QC.Sec:
     repos:
       github.com/013k-m/python-pytest-example bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-tomato-spaniel.sh
-        container: qc.sec_beady-red-bulldog
+        - /usr/bin/env sh .sqa/script.droopy-cornflower-greyhound.sh
+        container: qc.sec_shaky-red-squirt
   QC.Sty:
     repos:
       github.com/013k-m/python-pytest-example flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-tan-whale.sh
-        container: qc.sty_paltry-silver-newfoundland
+        - /usr/bin/env sh .sqa/script.snippy-linen-coati.sh
+        container: qc.sty_gummy-mauve-balinese
   QC.Uni:
     repos:
       github.com/013k-m/python-pytest-example commands:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-maroon-antelope.sh
-        container: qc.uni_sloppy-apricot-audemer
+        - /usr/bin/env sh .sqa/script.homey-eggplant-yak.sh
+        container: qc.uni_homey-maroon-axolotl
   QC.Ver:
     repos:
       github.com/013k-m/python-pytest-example get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-burgundy-caiman.sh
-        container: qc.ver_lovely-alizarin-dachsbracke
+        - /usr/bin/env sh .sqa/script.pretty-pear-chin.sh
+        container: qc.ver_goopy-amethyst-angora
 timeout: 5400

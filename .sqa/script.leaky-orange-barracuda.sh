@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/013k-m/python-pytest-example &&
-    mdl --json .
+cd github.com/eosc-synergy/sqaaas-api-spec &&
+    find_doc_files.py --file_type all
 )
