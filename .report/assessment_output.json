@@ -49,7 +49,7 @@
                                         "git rev-parse --is-inside-work-tree"
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/34/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/35/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -72,7 +72,7 @@
             }
         },
         "QC.Doc": {
-            "valid": false,
+            "valid": true,
             "subcriteria": {
                 "QC.Doc06.1": {
                     "description": "Is the software scope outlined in the code repository?",
@@ -95,13 +95,13 @@
                                     "reviewed": "2022-01-26"
                                 },
                                 "ci": {
-                                    "name": "QC.Doc github.com/013k-m/python-pytest-example find_doc_files.py",
+                                    "name": "QC.Doc github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 544}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 8701}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5490}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 1690}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/44/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -115,11 +115,21 @@
                                 "README": [
                                     {
                                         "file_name": "README.md",
-                                        "size": 544
+                                        "size": 8701
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 5490
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 1690
+                                    }
+                                ]
                             }
                         }
                     ],
@@ -131,8 +141,8 @@
                     "hint": "A CODE_OF_CONDUCT file sets the path for a constructive, respectful and positive atmosphere among all the contributors in your software project. Of course you can define your own, but in case you want to rely on external and widely-adopted code of conducts check out some of the most popular ones: <a href=\"https://contributor-covenant.org/\" target=\"_blank\">Contributor Covenant</a> or <a href=\"https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/\" target=\"_blank\">Citizen Code of Conduct</a>",
                     "evidence": [
                         {
-                            "valid": false,
-                            "message": "A CODE_OF_CONDUCT file is not present in the code repository",
+                            "valid": true,
+                            "message": "A CODE_OF_CONDUCT file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
                                 "version": "1.2.0"
@@ -146,13 +156,13 @@
                                     "reviewed": "2022-01-26"
                                 },
                                 "ci": {
-                                    "name": "QC.Doc github.com/013k-m/python-pytest-example find_doc_files.py",
+                                    "name": "QC.Doc github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 544}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 8701}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5490}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 1690}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/44/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -166,16 +176,25 @@
                                 "README": [
                                     {
                                         "file_name": "README.md",
-                                        "size": 544
+                                        "size": 8701
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 5490
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 1690
+                                    }
+                                ]
                             }
                         }
                     ],
-                    "valid": false,
-                    "required_for_next_level_badge": true
+                    "valid": true
                 },
                 "QC.Doc06.2": {
                     "description": "Is there a clear path or guidelines on how to contribute to the code?",
@@ -183,8 +202,8 @@
                     "hint": "A CONTRIBUTING file shall be present in the root path of the code repository describing the expected workflow to follow when adding contributions. Please check <a href=\"https://mozillascience.github.io/working-open-workshop/contributing/\" target=\"_blank\">Mozilla's guidelines</a> and <a href=\"https://github.com/github/docs/blob/main/CONTRIBUTING.md\" target=\"_blank\">GitHub's CONTRIBUTING.md example</a> to get inspired on how to write a good CONTRIBUTING file",
                     "evidence": [
                         {
-                            "valid": false,
-                            "message": "A CONTRIBUTING file is not present in the code repository",
+                            "valid": true,
+                            "message": "A CONTRIBUTING file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
                                 "version": "1.2.0"
@@ -198,13 +217,13 @@
                                     "reviewed": "2022-01-26"
                                 },
                                 "ci": {
-                                    "name": "QC.Doc github.com/013k-m/python-pytest-example find_doc_files.py",
+                                    "name": "QC.Doc github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 544}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 8701}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 5490}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 1690}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/44/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -218,16 +237,25 @@
                                 "README": [
                                     {
                                         "file_name": "README.md",
-                                        "size": 544
+                                        "size": 8701
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 5490
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 1690
+                                    }
+                                ]
                             }
                         }
                     ],
-                    "valid": false,
-                    "required_for_next_level_badge": true
+                    "valid": true
                 },
                 "QC.Doc01.1": {
                     "description": "Are docs managed in the same repository as code?",
@@ -247,13 +275,13 @@
                                 "version": null,
                                 "docker": null,
                                 "ci": {
-                                    "name": "QC.Doc github.com/013k-m/python-pytest-example git",
+                                    "name": "QC.Doc github.com/eosc-synergy/sqaaas-api-spec git",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "git rev-parse --is-inside-work-tree"
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/52/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/53/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -289,13 +317,13 @@
                                     "reviewed": "1970-01-01"
                                 },
                                 "ci": {
-                                    "name": "QC.Doc github.com/013k-m/python-pytest-example markdownlint",
+                                    "name": "QC.Doc github.com/eosc-synergy/sqaaas-api-spec markdownlint",
                                     "status": "FAILED",
                                     "stdout_command": [
                                         "mdl --json ."
                                     ],
-                                    "stdout_text": "[{\"filename\":\"./README.md\",\"line\":7,\"rule\":\"MD001\",\"aliases\":[\"header-increment\"],\"description\":\"Header levels should only increment by one level at a time\"},{\"filename\":\"./README.md\",\"line\":5,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":10,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":11,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":13,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":12,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":11,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\"}]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/61/log?consoleFull"
+                                    "stdout_text": "[{\"filename\":\"./CONTRIBUTING.md\",\"line\":4,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":17,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":24,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":33,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":35,\"rule\":\"MD012\",\"aliases\":[\"no-multiple-blanks\"],\"description\":\"Multiple consecutive blank lines\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":40,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":18,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":22,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./README.md\",\"line\":35,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./README.md\",\"line\":79,\"rule\":\"MD012\",\"aliases\":[\"no-multiple-blanks\"],\"description\":\"Multiple consecutive blank lines\"},{\"filename\":\"./README.md\",\"line\":5,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":9,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":10,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":11,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":18,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":22,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":23,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":170,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":196,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":197,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":278,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":7,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":52,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":55,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":58,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":89,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":48,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":85,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":86,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":87,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":188,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":189,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":196,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":197,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":285,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":286,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\"},{\"filename\":\"./README.md\",\"line\":91,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":96,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":98,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":200,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":5,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":8,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":9,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":10,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":11,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":139,\"rule\":\"MD046\",\"aliases\":[\"code-block-style\"],\"description\":\"Code block style\"},{\"filename\":\"./openapi/README.md\",\"line\":1,\"rule\":\"MD002\",\"aliases\":[\"first-header-h1\"],\"description\":\"First header should be a top level header\"},{\"filename\":\"./openapi/README.md\",\"line\":9,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/README.md\",\"line\":10,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/README.md\",\"line\":11,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/README.md\",\"line\":12,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/components/README.md\",\"line\":5,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":6,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":7,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":8,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":9,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":10,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":11,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":12,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/components/README.md\",\"line\":13,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":28,\"rule\":\"MD001\",\"aliases\":[\"header-increment\"],\"description\":\"Header levels should only increment by one level at a time\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":16,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":28,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":35,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":40,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":46,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":50,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":54,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":58,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":76,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":91,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":99,\"rule\":\"MD003\",\"aliases\":[\"header-style\"],\"description\":\"Header style\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":12,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":42,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":44,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":93,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":101,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":34,\"rule\":\"MD012\",\"aliases\":[\"no-multiple-blanks\"],\"description\":\"Multiple consecutive blank lines\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":4,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":14,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":18,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":26,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":30,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":32,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":38,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":44,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":48,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":93,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":105,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":99,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":50,\"rule\":\"MD024\",\"aliases\":[\"no-duplicate-header\"],\"description\":\"Multiple headers with the same content\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":54,\"rule\":\"MD024\",\"aliases\":[\"no-duplicate-header\"],\"description\":\"Multiple headers with the same content\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":76,\"rule\":\"MD024\",\"aliases\":[\"no-duplicate-header\"],\"description\":\"Multiple headers with the same content\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":91,\"rule\":\"MD024\",\"aliases\":[\"no-duplicate-header\"],\"description\":\"Multiple headers with the same content\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":99,\"rule\":\"MD025\",\"aliases\":[\"single-h1\"],\"description\":\"Multiple top level headers in the same document\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":61,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":70,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":96,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":104,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./openapi/paths/README.md\",\"line\":100,\"rule\":\"MD046\",\"aliases\":[\"code-block-style\"],\"description\":\"Code block style\"}]",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/62/log?consoleFull"
                                 },
                                 "level": "RECOMMENDED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -306,37 +334,238 @@
                                 "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
                             },
                             "data_unstructured": {
-                                "./README.md": {
-                                    "MD001": {
-                                        "description": "Header levels should only increment by one level at a time",
+                                "./CONTRIBUTING.md": {
+                                    "MD009": {
+                                        "description": "Trailing spaces",
                                         "line": [
-                                            7
+                                            4,
+                                            17,
+                                            24,
+                                            33
+                                        ]
+                                    },
+                                    "MD012": {
+                                        "description": "Multiple consecutive blank lines",
+                                        "line": [
+                                            35
                                         ]
                                     },
                                     "MD013": {
                                         "description": "Line length",
                                         "line": [
-                                            5
-                                        ]
-                                    },
-                                    "MD029": {
-                                        "description": "Ordered list item prefix",
-                                        "line": [
-                                            10,
-                                            11,
-                                            13
-                                        ]
-                                    },
-                                    "MD031": {
-                                        "description": "Fenced code blocks should be surrounded by blank lines",
-                                        "line": [
-                                            12
+                                            40
                                         ]
                                     },
                                     "MD032": {
                                         "description": "Lists should be surrounded by blank lines",
                                         "line": [
+                                            18
+                                        ]
+                                    }
+                                },
+                                "./README.md": {
+                                    "MD009": {
+                                        "description": "Trailing spaces",
+                                        "line": [
+                                            22,
+                                            35
+                                        ]
+                                    },
+                                    "MD012": {
+                                        "description": "Multiple consecutive blank lines",
+                                        "line": [
+                                            79
+                                        ]
+                                    },
+                                    "MD013": {
+                                        "description": "Line length",
+                                        "line": [
+                                            5,
+                                            9,
+                                            10,
+                                            11,
+                                            18,
+                                            22,
+                                            23,
+                                            170,
+                                            196,
+                                            197,
+                                            278
+                                        ]
+                                    },
+                                    "MD022": {
+                                        "description": "Headers should be surrounded by blank lines",
+                                        "line": [
+                                            7,
+                                            52,
+                                            55,
+                                            58,
+                                            89
+                                        ]
+                                    },
+                                    "MD029": {
+                                        "description": "Ordered list item prefix",
+                                        "line": [
+                                            48,
+                                            85,
+                                            86,
+                                            87,
+                                            188,
+                                            189,
+                                            196,
+                                            197,
+                                            285,
+                                            286
+                                        ]
+                                    },
+                                    "MD031": {
+                                        "description": "Fenced code blocks should be surrounded by blank lines",
+                                        "line": [
+                                            91,
+                                            96,
+                                            98,
+                                            200
+                                        ]
+                                    },
+                                    "MD033": {
+                                        "description": "Inline HTML",
+                                        "line": [
+                                            5,
+                                            8,
+                                            9,
+                                            10,
                                             11
+                                        ]
+                                    },
+                                    "MD046": {
+                                        "description": "Code block style",
+                                        "line": [
+                                            139
+                                        ]
+                                    }
+                                },
+                                "./openapi/README.md": {
+                                    "MD002": {
+                                        "description": "First header should be a top level header",
+                                        "line": [
+                                            1
+                                        ]
+                                    },
+                                    "MD013": {
+                                        "description": "Line length",
+                                        "line": [
+                                            9,
+                                            10,
+                                            11,
+                                            12
+                                        ]
+                                    }
+                                },
+                                "./openapi/components/README.md": {
+                                    "MD004": {
+                                        "description": "Unordered list style",
+                                        "line": [
+                                            5,
+                                            6,
+                                            7,
+                                            8,
+                                            9,
+                                            10,
+                                            11,
+                                            12,
+                                            13
+                                        ]
+                                    }
+                                },
+                                "./openapi/paths/README.md": {
+                                    "MD001": {
+                                        "description": "Header levels should only increment by one level at a time",
+                                        "line": [
+                                            28
+                                        ]
+                                    },
+                                    "MD003": {
+                                        "description": "Header style",
+                                        "line": [
+                                            16,
+                                            28,
+                                            35,
+                                            40,
+                                            46,
+                                            50,
+                                            54,
+                                            58,
+                                            76,
+                                            91,
+                                            99
+                                        ]
+                                    },
+                                    "MD009": {
+                                        "description": "Trailing spaces",
+                                        "line": [
+                                            12,
+                                            42,
+                                            44,
+                                            93,
+                                            101
+                                        ]
+                                    },
+                                    "MD012": {
+                                        "description": "Multiple consecutive blank lines",
+                                        "line": [
+                                            34
+                                        ]
+                                    },
+                                    "MD013": {
+                                        "description": "Line length",
+                                        "line": [
+                                            4,
+                                            14,
+                                            18,
+                                            26,
+                                            30,
+                                            32,
+                                            38,
+                                            44,
+                                            48,
+                                            93,
+                                            105
+                                        ]
+                                    },
+                                    "MD022": {
+                                        "description": "Headers should be surrounded by blank lines",
+                                        "line": [
+                                            99
+                                        ]
+                                    },
+                                    "MD024": {
+                                        "description": "Multiple headers with the same content",
+                                        "line": [
+                                            50,
+                                            54,
+                                            76,
+                                            91
+                                        ]
+                                    },
+                                    "MD025": {
+                                        "description": "Multiple top level headers in the same document",
+                                        "line": [
+                                            99
+                                        ]
+                                    },
+                                    "MD031": {
+                                        "description": "Fenced code blocks should be surrounded by blank lines",
+                                        "line": [
+                                            61,
+                                            70,
+                                            96,
+                                            104
+                                        ]
+                                    },
+                                    "MD046": {
+                                        "description": "Code block style",
+                                        "line": [
+                                            100
                                         ]
                                     }
                                 }
@@ -348,9 +577,9 @@
                 }
             },
             "coverage": {
-                "percentage": 40,
+                "percentage": 80,
                 "total_subcriteria": 5,
-                "success_subcriteria": 2
+                "success_subcriteria": 4
             }
         },
         "QC.Sec": {
@@ -382,8 +611,8 @@
                                     "stdout_command": [
                                         "bandit -f json --quiet  --confidence-level high --severity-level high --recursive ."
                                     ],
-                                    "stdout_text": "{\n  \"errors\": [],\n  \"generated_at\": \"2024-01-08T13:57:52Z\",\n  \"metrics\": {\n    \"./tests/test_http_requests.py\": {\n      \"CONFIDENCE.HIGH\": 10,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 10,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 40,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"_totals\": {\n      \"CONFIDENCE.HIGH\": 10,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 10,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 40,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    }\n  },\n  \"results\": []\n}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/79/log?consoleFull"
+                                    "stdout_text": "{\n  \"errors\": [],\n  \"generated_at\": \"2024-01-11T11:10:16Z\",\n  \"metrics\": {\n    \"./tests/test_http_requests.py\": {\n      \"CONFIDENCE.HIGH\": 10,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 10,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 40,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"_totals\": {\n      \"CONFIDENCE.HIGH\": 10,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 10,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 40,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    }\n  },\n  \"results\": []\n}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/80/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -395,7 +624,7 @@
                             },
                             "data_unstructured": {
                                 "errors": [],
-                                "generated_at": "2024-01-08T13:57:52Z",
+                                "generated_at": "2024-01-11T11:10:16Z",
                                 "metrics": {
                                     "./tests/test_http_requests.py": {
                                         "CONFIDENCE.HIGH": 10,
@@ -467,7 +696,7 @@
                                         "flake8 ."
                                     ],
                                     "stdout_text": "./tests/test_http_requests.py:4:1: E302 expected 2 blank lines, found 1\n./tests/test_http_requests.py:6:80: E501 line too long (92 > 79 characters)\n./tests/test_http_requests.py:28:80: E501 line too long (106 > 79 characters)",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/88/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/89/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -488,59 +717,6 @@
                 "percentage": 0,
                 "total_subcriteria": 1,
                 "success_subcriteria": 0
-            }
-        },
-        "QC.Uni": {
-            "valid": true,
-            "subcriteria": {
-                "QC.Uni01": {
-                    "description": "Are the tests passing through an automated means?",
-                    "requirement_level": "MUST",
-                    "hint": "Please check & solve the failing test cases found by the {tool_name} tool",
-                    "evidence": [
-                        {
-                            "valid": true,
-                            "message": "Test cases are successfully passing using bash testing framework",
-                            "plugin": {
-                                "name": "report2sqaaas-plugin-jenkins_exit_status",
-                                "version": "1.2.0"
-                            },
-                            "tool": {
-                                "name": "commands",
-                                "lang": "default",
-                                "version": "not-provided",
-                                "docker": {
-                                    "image": "python:3.8",
-                                    "reviewed": "1970-01-01"
-                                },
-                                "ci": {
-                                    "name": "QC.Uni github.com/013k-m/python-pytest-example commands",
-                                    "status": "SUCCESS",
-                                    "stdout_command": [
-                                        "pip install -r requirements.txt",
-                                        "pytest -v ./tests/"
-                                    ],
-                                    "stdout_text": "Collecting pytest==3.2.3\n  Downloading pytest-3.2.3-py2.py3-none-any.whl (187 kB)\n     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 187.2/187.2 KB 2.3 MB/s eta 0:00:00\nCollecting requests==2.20.0\n  Downloading requests-2.20.0-py2.py3-none-any.whl (60 kB)\n     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 61.0/61.0 KB 202.2 kB/s eta 0:00:00\nRequirement already satisfied: setuptools in /usr/local/lib/python3.8/site-packages (from pytest==3.2.3->-r requirements.txt (line 1)) (57.5.0)\nCollecting py>=1.4.33\n  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)\n     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 98.7/98.7 KB 1.4 MB/s eta 0:00:00\nCollecting certifi>=2017.4.17\n  Downloading certifi-2023.11.17-py3-none-any.whl (162 kB)\n     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 162.5/162.5 KB 2.1 MB/s eta 0:00:00\nCollecting idna<2.8,>=2.5\n  Downloading idna-2.7-py2.py3-none-any.whl (58 kB)\n     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 58.2/58.2 KB 1.2 MB/s eta 0:00:00\nCollecting chardet<3.1.0,>=3.0.2\n  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)\n     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 133.4/133.4 KB 2.4 MB/s eta 0:00:00\nCollecting urllib3<1.25,>=1.21.1\n  Downloading urllib3-1.24.3-py2.py3-none-any.whl (118 kB)\n     \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 118.8/118.8 KB 1.4 MB/s eta 0:00:00\nInstalling collected packages: idna, chardet, urllib3, py, certifi, requests, pytest\nSuccessfully installed certifi-2023.11.17 chardet-3.0.4 idna-2.7 py-1.11.0 pytest-3.2.3 requests-2.20.0 urllib3-1.24.3\nWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\nWARNING: You are using pip version 22.0.4; however, version 23.3.2 is available.\nYou should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.\n============================= test session starts ==============================\nplatform linux -- Python 3.8.16, pytest-3.2.3, py-1.11.0, pluggy-0.4.0 -- /usr/local/bin/python\ncachedir: .cache\nrootdir: /sqaaas-build/github.com/013k-m/python-pytest-example, inifile:\ncollecting ... collected 4 items\n\ntests/test_http_requests.py::TestClass::test_get_notexisting_url PASSED\ntests/test_http_requests.py::TestClass::test_post_notexisting_url PASSED\ntests/test_http_requests.py::TestClass::test_get PASSED\ntests/test_http_requests.py::TestClass::test_post PASSED\n\n=========================== 4 passed in 1.76 seconds ===========================",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/97/log?consoleFull"
-                                },
-                                "level": null,
-                                "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
-                            },
-                            "standard": {
-                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
-                                "version": "v4.0",
-                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
-                            },
-                            "data_unstructured": {}
-                        }
-                    ],
-                    "valid": true
-                }
-            },
-            "coverage": {
-                "percentage": 100,
-                "total_subcriteria": 1,
-                "success_subcriteria": 1
             }
         },
         "QC.Ver": {
@@ -573,7 +749,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/107/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -616,7 +792,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/107/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -659,7 +835,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/16/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/python-pytest-example.assess.sqaaas/job/main/19/execution/node/107/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/python-pytest-example.assess.sqaaas"
@@ -760,6 +936,15 @@
                 "total_subcriteria": 4,
                 "success_subcriteria": 0
             }
+        },
+        "QC.Uni": {
+            "valid": false,
+            "subcriteria": {},
+            "coverage": {
+                "percentage": 0,
+                "total_subcriteria": 0,
+                "success_subcriteria": 0
+            }
         }
     },
     "badge": {
@@ -768,57 +953,57 @@
                 "bronze": {
                     "to_fulfill": [
                         "QC.Lic",
-                        "QC.Acc",
-                        "QC.Doc"
+                        "QC.Doc",
+                        "QC.Acc"
                     ],
                     "missing": [
-                        "QC.Lic",
-                        "QC.Doc"
+                        "QC.Lic"
                     ],
                     "fulfilled": [
+                        "QC.Doc",
                         "QC.Acc"
                     ]
                 },
                 "silver": {
                     "to_fulfill": [
-                        "QC.Met",
                         "QC.Ver",
-                        "QC.Acc",
                         "QC.Lic",
+                        "QC.Met",
+                        "QC.Acc",
                         "QC.Doc"
                     ],
                     "missing": [
-                        "QC.Lic",
-                        "QC.Met",
                         "QC.Ver",
-                        "QC.Doc"
+                        "QC.Lic",
+                        "QC.Met"
                     ],
                     "fulfilled": [
+                        "QC.Doc",
                         "QC.Acc"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Uni",
-                        "QC.Met",
-                        "QC.Ver",
-                        "QC.Acc",
-                        "QC.Lic",
-                        "QC.Doc",
                         "QC.Sec",
-                        "QC.Sty"
+                        "QC.Ver",
+                        "QC.Lic",
+                        "QC.Met",
+                        "QC.Acc",
+                        "QC.Sty",
+                        "QC.Uni",
+                        "QC.Doc"
                     ],
                     "missing": [
-                        "QC.Met",
                         "QC.Ver",
                         "QC.Lic",
-                        "QC.Doc",
-                        "QC.Sty"
+                        "QC.Met",
+                        "QC.Sty",
+                        "QC.Uni"
                     ],
                     "fulfilled": [
-                        "QC.Acc",
-                        "QC.Uni",
-                        "QC.Sec"
+                        "QC.Sec",
+                        "QC.Doc",
+                        "QC.Acc"
                     ]
                 }
             },
