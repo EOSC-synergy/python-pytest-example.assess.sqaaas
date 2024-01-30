@@ -18,50 +18,28 @@ sqa_criteria:
     repos:
       github.com/013k-m/python-pytest-example git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-khaki-turtle.sh
-        container: qc.acc_squirrely-yellow-saola
+        - /usr/bin/env sh .sqa/script.zippy-cinnamon-coati.sh
+        container: qc.acc_slaphappy-russet-setter
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-orange-barracuda.sh
-        container: qc.doc_cozy-cream-grasshopper
+        - /usr/bin/env sh .sqa/script.lanky-maroon-spaniel.sh
+        container: qc.doc_wimpy-magnolia-rat
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-fuchsia-macaque.sh
-        container: qc.doc_greasy-indigo-bulldog
-      github.com/eosc-synergy/sqaaas-api-spec markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.greasy-malachite-tarantula.sh
-        container: qc.doc_hasty-seashell-birman
+        - /usr/bin/env sh .sqa/script.lanky-orange-burmese.sh
+        container: qc.doc_geeky-chartreuse-pinscher
   QC.Lic:
     repos:
       github.com/013k-m/python-pytest-example licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-tomato-coyote.sh
-        container: qc.lic_randy-olive-armadillo
-  QC.Sec:
-    repos:
-      github.com/013k-m/python-pytest-example bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.droopy-cornflower-greyhound.sh
-        container: qc.sec_shaky-red-squirt
-  QC.Sty:
-    repos:
-      github.com/013k-m/python-pytest-example flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.snippy-linen-coati.sh
-        container: qc.sty_gummy-mauve-balinese
-  QC.Uni:
-    repos:
-      github.com/013k-m/python-pytest-example commands:
-        commands:
-        - /usr/bin/env sh .sqa/script.homey-eggplant-yak.sh
-        container: qc.uni_homey-maroon-axolotl
+        - /usr/bin/env sh .sqa/script.jumpy-champagne-wombat.sh
+        container: qc.lic_goopy-eggplant-buffalo
   QC.Ver:
     repos:
       github.com/013k-m/python-pytest-example get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-pear-chin.sh
-        container: qc.ver_goopy-amethyst-angora
+        - /usr/bin/env sh .sqa/script.wimpy-red-sloth.sh
+        container: qc.ver_hilly-cream-quoll
 timeout: 5400
