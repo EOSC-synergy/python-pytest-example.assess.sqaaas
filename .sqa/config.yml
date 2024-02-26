@@ -18,28 +18,28 @@ sqa_criteria:
     repos:
       github.com/013k-m/python-pytest-example git:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-cinnamon-coati.sh
-        container: qc.acc_slaphappy-russet-setter
+        - /usr/bin/env sh .sqa/script.hasty-olivine-moose.sh
+        container: qc.acc_thirsty-apricot-salamander
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-spec find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-maroon-spaniel.sh
-        container: qc.doc_wimpy-magnolia-rat
+        - /usr/bin/env sh .sqa/script.sunny-sapphire-jaguar.sh
+        container: qc.doc_smelly-alizarin-cow
       github.com/eosc-synergy/sqaaas-api-spec git:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-orange-burmese.sh
-        container: qc.doc_geeky-chartreuse-pinscher
+        - /usr/bin/env sh .sqa/script.woozy-orange-centipede.sh
+        container: qc.doc_hasty-cinnabar-oriole
   QC.Lic:
     repos:
       github.com/013k-m/python-pytest-example licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-champagne-wombat.sh
-        container: qc.lic_goopy-eggplant-buffalo
+        - /usr/bin/env sh .sqa/script.lovely-myrtle-devil.sh
+        container: qc.lic_sleazy-bistre-tamarin
   QC.Ver:
     repos:
       github.com/013k-m/python-pytest-example get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-red-sloth.sh
-        container: qc.ver_hilly-cream-quoll
+        - /usr/bin/env sh .sqa/script.homey-olive-impala.sh
+        container: qc.ver_muggy-brown-terrier
 timeout: 5400
